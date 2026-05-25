@@ -54,7 +54,7 @@
           return;
         }
 
-        const response = await fetch('http://localhost:3000/products', {
+        const response = await fetch('https://smartstock-backend-4.onrender.com/products', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -117,7 +117,7 @@
       }
 
       try {
-        const response = await fetch(`http://localhost:3000/products/${productId}/stock`, {
+        const response = await fetch(`https://smartstock-backend-4.onrender.com/products/${productId}/stock`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
